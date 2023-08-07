@@ -21,11 +21,12 @@ st.set_page_config(layout="centered", page_title="Youtube QnA")
 #header of the application
 image = Image.open('logo.png')
  
-col1, col2 = st.columns([1,1])
+col1, col2 = st.columns([2,1])
 with col1:
     st.image(image, width=250)
 with col2:
-    st.header('AlphaGPT')
+  pass
+    # st.header('AlphaGPT')
 st.write("---") # horizontal separator line.
 
 def extract_and_save_audio(video_URL, destination, final_filename):
