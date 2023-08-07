@@ -40,11 +40,12 @@ place1 = st.empty()
 
 logo1 = "aai_white.png"
 logo2 = "alphaGPT-2k.png"
+logo3 = "bannner.png"
 with place1.container():
-    anima1 , anima2 = st.columns([2,1])
+    anima1 , anima2 = st.columns([1,1])
     with anima1:
         # st.image("aai_black.png", width = 350, use_column_width=True)
-        st.image(logo2, width = 350, use_column_width=True)
+        st.image(logo3, width = 280, use_column_width=True)
     with anima2:
         st_lottie(
         lottie_hello1,
