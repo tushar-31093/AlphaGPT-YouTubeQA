@@ -37,7 +37,7 @@ lottie_hello1 = load_lottieurl(" https://lottie.host/93dcafc4-8531-4406-891c-89c
 place1 = st.empty()
 
 with place1.container():
-    anima1 , anima2 = st.columns([2,1])
+    anima1 , anima2 = st.columns([1,1])
     with anima1:
         # st.image("aai_black.png", width = 350, use_column_width=True)
         st.image("aai_white.png", width = 200, use_column_width=True)
