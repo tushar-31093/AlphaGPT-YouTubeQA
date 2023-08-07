@@ -32,8 +32,9 @@ def load_lottieurl(url: str):
         return None
     return r.json()
     
- 
-lottie_hello1 = load_lottieurl(" https://lottie.host/93dcafc4-8531-4406-891c-89c28e4f76e1/lWpokVrjB9.json")
+url_lottie1 = "https://lottie.host/d860aaf2-a646-42f2-8a51-3efe3be59bf2/tpZB5YYkuT.json"
+url_lottie2 = "https://lottie.host/93dcafc4-8531-4406-891c-89c28e4f76e1/lWpokVrjB9.json"
+lottie_hello1 = load_lottieurl(url_lottie1)
 place1 = st.empty()
 
 with place1.container():
