@@ -23,7 +23,7 @@ image = Image.open('logo.png')
  
 col1, col2 = st.columns([1,1])
 with col1:
-    st.image(image, width=110)
+    st.image(image, width=250)
 with col2:
     st.header('AlphaGPT')
 st.write("---") # horizontal separator line.
