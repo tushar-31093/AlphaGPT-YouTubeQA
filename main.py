@@ -40,7 +40,7 @@ with place1.container():
     anima1 , anima2 = st.columns([2,1])
     with anima1:
         # st.image("aai_black.png", width = 350, use_column_width=True)
-        st.image("aai_white.png", width = 250, use_column_width=True)
+        st.image("aai_white.png", width = 200, use_column_width=True)
     with anima2:
         st_lottie(
         lottie_hello1,
@@ -48,8 +48,8 @@ with place1.container():
         reverse=False,
         loop=True,
         quality="high", # medium ; high
-        height=220,
-        width=220,
+        height=250,
+        width=250,
         key=None,
         )
 
