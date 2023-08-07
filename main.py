@@ -23,7 +23,13 @@ st.set_page_config(layout="centered", page_title="Youtube QnA")
 #header of the application
 # image = Image.open('logo.png')
  
- 
+hide_streamlit_style = """"
+
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
  
 def load_lottieurl(url: str):
