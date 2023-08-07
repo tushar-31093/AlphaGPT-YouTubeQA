@@ -91,8 +91,6 @@ openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")
 if not openai_api_key:
     st.info("Please add your OpenAI API key to continue.")
     st.stop()
-with st.sidebar:
-  st.write("Youtube Question Answering Bot")
     
     
 #App title
