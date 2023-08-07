@@ -49,6 +49,8 @@ logo1 = "aai_white.png"
 logo2 = "alphaGPT-2k.png"
 logo3 = "banner.png"
 with place1.container():
+    #App title
+    st.header("Youtube Question Answering Bot")
     anima1 , anima2 = st.columns([1,1])
     with anima1:
         # st.image("aai_black.png", width = 350, use_column_width=True)
@@ -93,8 +95,8 @@ if not openai_api_key:
     st.stop()
     
     
-#App title
-st.header("Youtube Question Answering Bot")
+# #App title
+# st.header("Youtube Question Answering Bot")
 state = st.session_state
 site = st.text_input("Enter your URL here")
 if st.button("Build Model"):
