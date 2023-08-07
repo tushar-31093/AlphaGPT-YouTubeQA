@@ -7,6 +7,7 @@ from PIL import Image
 import whisper
 import torch
 import os
+from streamlit_lottie import st_lottie 
 from pytube import YouTube
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.document_loaders import DataFrameLoader
@@ -15,19 +16,42 @@ from langchain.chains import RetrievalQAWithSourcesChain
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.llms import OpenAI
 import pandas as pd
+import requests
 
 st.set_page_config(layout="centered", page_title="Youtube QnA")
 
 #header of the application
-image = Image.open('logo.png')
+# image = Image.open('logo.png')
  
-col1, col2 = st.columns([2,1])
-with col1:
-    st.image(image, width=250)
-with col2:
-  pass
-    # st.header('AlphaGPT')
-st.write("---") # horizontal separator line.
+ 
+
+ 
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+    
+ 
+lottie_hello1 = load_lottieurl(" https://lottie.host/93dcafc4-8531-4406-891c-89c28e4f76e1/lWpokVrjB9.json")
+place1 = st.empty()
+
+with place1.container():
+    anima1 , anima2 = st.columns([2,1])
+    with anima1:
+        # st.image("aai_black.png", width = 350, use_column_width=True)
+        st.image("aai_white.png", width = 350, use_column_width=True)
+    with anima2:
+        st_lottie(
+        lottie_hello1,
+        speed=1,
+        reverse=False,
+        loop=True,
+        quality="high", # medium ; high
+        height=220,
+        width=220,
+        key=None,
+        )
 
 def extract_and_save_audio(video_URL, destination, final_filename):
   video = YouTube(video_URL)#get video
