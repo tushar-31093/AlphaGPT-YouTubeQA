@@ -37,11 +37,14 @@ url_lottie2 = "https://lottie.host/93dcafc4-8531-4406-891c-89c28e4f76e1/lWpokVrj
 lottie_hello1 = load_lottieurl(url_lottie1)
 place1 = st.empty()
 
+
+logo1 = "aai_white.png"
+logo2 = "alphaGPT-2k.png"
 with place1.container():
     anima1 , anima2 = st.columns([2,1])
     with anima1:
         # st.image("aai_black.png", width = 350, use_column_width=True)
-        st.image("aai_white.png", width = 350, use_column_width=False)
+        st.image(logo2, width = 350, use_column_width=True)
     with anima2:
         st_lottie(
         lottie_hello1,
