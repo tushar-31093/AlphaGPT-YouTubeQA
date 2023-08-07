@@ -40,7 +40,7 @@ place1 = st.empty()
 
 logo1 = "aai_white.png"
 logo2 = "alphaGPT-2k.png"
-logo3 = "bannner.png"
+logo3 = "banner.png"
 with place1.container():
     anima1 , anima2 = st.columns([1,1])
     with anima1:
