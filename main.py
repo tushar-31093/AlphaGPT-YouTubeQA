@@ -186,7 +186,8 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.document_loaders import DataFrameLoader
 from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQAWithSourcesChain
-from langchain.embeddings.openai import OpenAIEmbeddings
+# from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain_community.embeddings import OpenAIEmbeddings
 # from langchain.llms import OpenAI
 from langchain_community.llms import OpenAI
 import pandas as pd
