@@ -184,7 +184,8 @@ from pytube import YouTube
 from langchain.text_splitter import CharacterTextSplitter
 # from langchain.document_loaders import DataFrameLoader
 from langchain_community.document_loaders import DataFrameLoader
-from langchain.vectorstores import Chroma
+# from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
 from langchain.chains import RetrievalQAWithSourcesChain
 # from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain_community.embeddings import OpenAIEmbeddings
