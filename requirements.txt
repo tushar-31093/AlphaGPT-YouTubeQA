@@ -11,4 +11,4 @@ typing_extensions==4.5.0
 pandas
 openai-whisper
 pysqlite3-binary
-protobuf==3.19.0
+protobuf==3.19.5
